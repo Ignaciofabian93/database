@@ -12,10 +12,10 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - ipvlan-net
+      - bridge-network
 
 networks:
-  ipvlan-net:
+  bridge-network:
     external: true
 
 volumes:
